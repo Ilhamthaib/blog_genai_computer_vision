@@ -1,59 +1,78 @@
-<svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" style="background:#f5f3ef;border-radius:6px;padding:20px">
+<svg viewBox="0 0 660 220" xmlns="http://www.w3.org/2000/svg"
+     font-family="DM Sans, sans-serif">
+
+  <!-- Background -->
+  <rect width="660" height="220" fill="white"/>
+
   <!-- Headers -->
-  <rect x="0" y="0" width="220" height="32" rx="0" fill="#eeedfd"/>
-  <text x="110" y="20" text-anchor="middle" font-weight="600" fill="#4e3fbf">GAN</text>
-  <rect x="222" y="0" width="216" height="32" rx="0" fill="#e1f3ed"/>
-  <text x="330" y="20" text-anchor="middle" font-weight="600" fill="#0e6e55">VAE</text>
-  <rect x="440" y="0" width="220" height="32" rx="0" fill="#fdf0dc"/>
-  <text x="550" y="20" text-anchor="middle" font-weight="600" fill="#a05c00">Diffusion</text>
-  <!-- separateurs verticaux -->
-  <line x1="220" y1="0" x2="220" y2="200" stroke="#e8e3db" stroke-width="1"/>
-  <line x1="440" y1="0" x2="440" y2="200" stroke="#e8e3db" stroke-width="1"/>
-  <!-- Row 1: Qualite -->
-  <text x="8" y="54" font-size="11" font-weight="600" fill="#8a837c">Qualite visuelle</text>
-  <rect x="8" y="60" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="8" y="60" width="160" height="8" rx="4" fill="#4e3fbf"/>
-  <text x="204" y="69" font-size="10" fill="#4e3fbf">Tres haute</text>
-  <rect x="228" y="60" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="228" y="60" width="110" height="8" rx="4" fill="#0e6e55" opacity=".7"/>
-  <text x="424" y="69" font-size="10" fill="#8a837c">Correcte</text>
-  <rect x="448" y="60" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="448" y="60" width="190" height="8" rx="4" fill="#a05c00"/>
-  <text x="640" y="69" font-size="10" fill="#a05c00">Etat de l'art</text>
-  <line x1="0" y1="78" x2="660" y2="78" stroke="#f0eeea" stroke-width="1"/>
-  <!-- Row 2: Diversite -->
-  <text x="8" y="96" font-size="11" font-weight="600" fill="#8a837c">Diversite</text>
-  <rect x="8" y="102" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="8" y="102" width="88" height="8" rx="4" fill="#4e3fbf" opacity=".6"/>
-  <text x="98" y="111" font-size="10" fill="#a05c00">Mode collapse</text>
-  <rect x="228" y="102" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="228" y="102" width="148" height="8" rx="4" fill="#0e6e55"/>
-  <text x="378" y="111" font-size="10" fill="#0e6e55">Bonne</text>
-  <rect x="448" y="102" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="448" y="102" width="188" height="8" rx="4" fill="#a05c00"/>
-  <text x="638" y="111" font-size="10" fill="#a05c00">Excellente</text>
-  <line x1="0" y1="120" x2="660" y2="120" stroke="#f0eeea" stroke-width="1"/>
-  <!-- Row 3: Vitesse -->
-  <text x="8" y="138" font-size="11" font-weight="600" fill="#8a837c">Vitesse generation</text>
-  <rect x="8" y="144" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="8" y="144" width="180" height="8" rx="4" fill="#0e6e55"/>
-  <text x="190" y="153" font-size="10" fill="#0e6e55">Rapide</text>
-  <rect x="228" y="144" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="228" y="144" width="174" height="8" rx="4" fill="#0e6e55"/>
-  <text x="404" y="153" font-size="10" fill="#0e6e55">Rapide</text>
-  <rect x="448" y="144" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="448" y="144" width="48" height="8" rx="4" fill="#c4531a"/>
-  <text x="498" y="153" font-size="10" fill="#c4531a">Lent (multi-etapes)</text>
-  <line x1="0" y1="162" x2="660" y2="162" stroke="#f0eeea" stroke-width="1"/>
-  <!-- Row 4: Stabilite -->
-  <text x="8" y="180" font-size="11" font-weight="600" fill="#8a837c">Stabilite entrainement</text>
-  <rect x="8" y="186" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="8" y="186" width="60" height="8" rx="4" fill="#c4531a"/>
-  <text x="70" y="195" font-size="10" fill="#c4531a">Instable, difficile a regler</text>
-  <rect x="228" y="186" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="228" y="186" width="180" height="8" rx="4" fill="#0e6e55"/>
-  <text x="410" y="195" font-size="10" fill="#0e6e55">Stable</text>
-  <rect x="448" y="186" width="194" height="8" rx="4" fill="#e8e3db"/>
-  <rect x="448" y="186" width="186" height="8" rx="4" fill="#0e6e55"/>
-  <text x="636" y="195" font-size="10" fill="#0e6e55">Tres stable</text>
+  <rect x="0" y="0" width="220" height="36" fill="#f2f0ff"/>
+  <text x="110" y="23" text-anchor="middle" font-size="13" font-weight="700" fill="#4e3fbf">GAN</text>
+
+  <rect x="220" y="0" width="220" height="36" fill="#ecfbf5"/>
+  <text x="330" y="23" text-anchor="middle" font-size="13" font-weight="700" fill="#0e6e55">VAE</text>
+
+  <rect x="440" y="0" width="220" height="36" fill="#fff4e6"/>
+  <text x="550" y="23" text-anchor="middle" font-size="13" font-weight="700" fill="#a05c00">Diffusion</text>
+
+  <!-- Column separators -->
+  <line x1="220" y1="0" x2="220" y2="220" stroke="#e6e6e6"/>
+  <line x1="440" y1="0" x2="440" y2="220" stroke="#e6e6e6"/>
+
+  <!-- ROW FUNCTION -->
+  <!-- Row template spacing -->
+  <!-- y base: 60, 110, 160, 210 -->
+
+  <!-- ================= ROW 1 ================= -->
+  <text x="10" y="60" font-size="11" font-weight="600" fill="#666">Qualité visuelle</text>
+
+  <!-- GAN -->
+  <rect x="10" y="68" width="180" height="10" rx="5" fill="#eee"/>
+  <rect x="10" y="68" width="150" height="10" rx="5" fill="#4e3fbf"/>
+  <text x="195" y="77" font-size="10" fill="#4e3fbf">Très haute</text>
+
+  <!-- VAE -->
+  <rect x="230" y="68" width="180" height="10" rx="5" fill="#eee"/>
+  <rect x="230" y="68" width="120" height="10" rx="5" fill="#0e6e55"/>
+  <text x="410" y="77" font-size="10" fill="#0e6e55">Correcte</text>
+
+  <!-- Diffusion -->
+  <rect x="450" y="68" width="180" height="10" rx="5" fill="#eee"/>
+  <rect x="450" y="68" width="170" height="10" rx="5" fill="#a05c00"/>
+  <text x="630" y="77" font-size="10" fill="#a05c00">État de l'art</text>
+
+  <!-- Divider -->
+  <line x1="0" y1="95" x2="660" y2="95" stroke="#f3f3f3"/>
+
+  <!-- ================= ROW 2 ================= -->
+  <text x="10" y="115" font-size="11" font-weight="600" fill="#666">Diversité</text>
+
+  <rect x="10" y="123" width="180" height="10" rx="5" fill="#eee"/>
+  <rect x="10" y="123" width="70" height="10" rx="5" fill="#4e3fbf"/>
+  <text x="95" y="132" font-size="10" fill="#a05c00">Mode collapse</text>
+
+  <rect x="230" y="123" width="180" height="10" rx="5" fill="#eee"/>
+  <rect x="230" y="123" width="140" height="10" rx="5" fill="#0e6e55"/>
+  <text x="375" y="132" font-size="10" fill="#0e6e55">Bonne</text>
+
+  <rect x="450" y="123" width="180" height="10" rx="5" fill="#eee"/>
+  <rect x="450" y="123" width="175" height="10" rx="5" fill="#a05c00"/>
+  <text x="628" y="132" font-size="10" fill="#a05c00">Excellente</text>
+
+  <line x1="0" y1="150" x2="660" y2="150" stroke="#f3f3f3"/>
+
+  <!-- ================= ROW 3 ================= -->
+  <text x="10" y="170" font-size="11" font-weight="600" fill="#666">Vitesse génération</text>
+
+  <rect x="10" y="178" width="180" height="10" rx="5" fill="#eee"/>
+  <rect x="10" y="178" width="170" height="10" rx="5" fill="#0e6e55"/>
+  <text x="185" y="187" font-size="10" fill="#0e6e55">Rapide</text>
+
+  <rect x="230" y="178" width="180" height="10" rx="5" fill="#eee"/>
+  <rect x="230" y="178" width="160" height="10" rx="5" fill="#0e6e55"/>
+  <text x="395" y="187" font-size="10" fill="#0e6e55">Rapide</text>
+
+  <rect x="450" y="178" width="180" height="10" rx="5" fill="#eee"/>
+  <rect x="450" y="178" width="60" height="10" rx="5" fill="#c4531a"/>
+  <text x="515" y="187" font-size="10" fill="#c4531a">Lent (multi-étapes)</text>
+
 </svg>
