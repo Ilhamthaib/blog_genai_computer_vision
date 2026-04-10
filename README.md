@@ -133,11 +133,11 @@ Pour générer une nouvelle image, on part de bruit aléatoire et on applique la
 | Critère | GAN | VAE | Diffusion |
 |---|---|---|---|
 | **Idée centrale** | Deux réseaux en compétition | Compression et reconstruction | Débruitage progressif |
-| **Qualité visuelle** | ✅ Très haute | ⚠️ Correcte, parfois floue | ✅ État de l'art |
-| **Diversité** | ⚠️ Mode collapse possible | ✅ Bonne | ✅ Excellente |
-| **Vitesse de génération** | ✅ Rapide (1 passe) | ✅ Rapide (1 passe) | ❌ Lent (T étapes) |
-| **Stabilité d'entraînement** | ❌ Instable, difficile | ✅ Stable | ✅ Très stable |
-| **Contrôlabilité** | ⚠️ Difficile | ✅ Espace latent continu | ✅ Text-to-image natif |
+| **Qualité visuelle** | Très haute | Correcte, parfois floue | État de l'art |
+| **Diversité** | Mode collapse possible | Bonne | Excellente |
+| **Vitesse de génération** | Rapide (1 passe) | Rapide (1 passe) | Lent (T étapes) |
+| **Stabilité d'entraînement** | Instable, difficile | Stable | Très stable |
+| **Contrôlabilité** | Difficile | Espace latent continu | Text-to-image natif |
 | **Exemples célèbres** | StyleGAN, CycleGAN | beta-VAE, VQ-VAE | DALL-E, Stable Diffusion |
 | **Quand l'utiliser** | Génération rapide, haute qualité visuelle | Navigation dans l'espace latent, interpolation | Meilleure qualité, génération guidée par texte |
 
