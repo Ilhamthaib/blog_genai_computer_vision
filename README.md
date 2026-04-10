@@ -66,6 +66,8 @@ Il existe plusieurs façons d'apprendre à une machine à créer des images. Voi
 
 Un GAN contient deux réseaux de neurones qui s'affrontent. Le **Générateur** crée de fausses images à partir de bruit aléatoire. Le **Discriminateur** examine chaque image et répond : "vraie" ou "fausse" ? À chaque itération, les deux s'améliorent ensemble — jusqu'à ce que le générateur produise des images indiscernables des vraies.
 
+**Schèma : Architecture GAN**
+
 ![Architecture GAN](images/gan_architecture.svg)
 
 > **Cas d'usage :** Génération de visages réalistes (StyleGAN), transfert de style artistique (CycleGAN), amélioration de résolution (SRGAN), création de personnages pour les jeux vidéo et le cinéma.
@@ -84,7 +86,11 @@ Un VAE fonctionne en deux étapes. L'**Encodeur** compresse l'image en un petit 
 
 La grande idée : l'espace latent est continu et structuré. En déplaçant légèrement le vecteur, on obtient des images différentes mais cohérentes. On peut ainsi "naviguer" entre les concepts — passer progressivement d'un visage souriant à un visage neutre, ou d'un chat à un chien.
 
+**Schèma : Architecture VAE — Pipeline complet**
+
 ![Architecture VAE — Pipeline complet](images/vae_architecture.svg)
+
+**Schèma : Navigation dans l'espace latent — interpolation entre deux images**
 
 ![Navigation dans l'espace latent — interpolation entre deux images](images/vae_interpolation.svg)
 
@@ -102,7 +108,11 @@ Le modèle s'entraîne en deux phases. Dans la **phase forward**, on prend une i
 
 Pour générer une nouvelle image, on part de bruit aléatoire et on applique la phase backward. À chaque étape, une structure émerge progressivement jusqu'à obtenir une image cohérente et réaliste.
 
+**Schèma : Phase Forward — ajout progressif de bruit**
+
 ![Phase Forward — ajout progressif de bruit](images/diffusion_forward.svg)
+
+**Schèma : Phase Backward — débruitage progressif par le réseau U-Net**
 
 ![Phase Backward — débruitage progressif par le réseau U-Net](images/diffusion_backward.svg)
 
@@ -115,6 +125,8 @@ Pour générer une nouvelle image, on part de bruit aléatoire et on applique la
 ## GAN, VAE, Diffusion — le match
 
 > *"Pas de modèle universel. Le meilleur choix dépend toujours du problème à résoudre."*
+
+**Comparaison visuelle — qualité, diversité, vitesse, stabilité :**
 
 ![Comparaison visuelle — qualité, diversité, vitesse, stabilité](images/comparison_chart.svg)
 
