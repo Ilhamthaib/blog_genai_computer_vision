@@ -1,0 +1,59 @@
+<svg viewBox="0 0 660 200" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" style="background:#f5f3ef;border-radius:6px;padding:20px">
+  <!-- Headers -->
+  <rect x="0" y="0" width="220" height="32" rx="0" fill="#eeedfd"/>
+  <text x="110" y="20" text-anchor="middle" font-weight="600" fill="#4e3fbf">GAN</text>
+  <rect x="222" y="0" width="216" height="32" rx="0" fill="#e1f3ed"/>
+  <text x="330" y="20" text-anchor="middle" font-weight="600" fill="#0e6e55">VAE</text>
+  <rect x="440" y="0" width="220" height="32" rx="0" fill="#fdf0dc"/>
+  <text x="550" y="20" text-anchor="middle" font-weight="600" fill="#a05c00">Diffusion</text>
+  <!-- separateurs verticaux -->
+  <line x1="220" y1="0" x2="220" y2="200" stroke="#e8e3db" stroke-width="1"/>
+  <line x1="440" y1="0" x2="440" y2="200" stroke="#e8e3db" stroke-width="1"/>
+  <!-- Row 1: Qualite -->
+  <text x="8" y="54" font-size="11" font-weight="600" fill="#8a837c">Qualite visuelle</text>
+  <rect x="8" y="60" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="8" y="60" width="160" height="8" rx="4" fill="#4e3fbf"/>
+  <text x="204" y="69" font-size="10" fill="#4e3fbf">Tres haute</text>
+  <rect x="228" y="60" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="228" y="60" width="110" height="8" rx="4" fill="#0e6e55" opacity=".7"/>
+  <text x="424" y="69" font-size="10" fill="#8a837c">Correcte</text>
+  <rect x="448" y="60" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="448" y="60" width="190" height="8" rx="4" fill="#a05c00"/>
+  <text x="640" y="69" font-size="10" fill="#a05c00">Etat de l'art</text>
+  <line x1="0" y1="78" x2="660" y2="78" stroke="#f0eeea" stroke-width="1"/>
+  <!-- Row 2: Diversite -->
+  <text x="8" y="96" font-size="11" font-weight="600" fill="#8a837c">Diversite</text>
+  <rect x="8" y="102" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="8" y="102" width="88" height="8" rx="4" fill="#4e3fbf" opacity=".6"/>
+  <text x="98" y="111" font-size="10" fill="#a05c00">Mode collapse</text>
+  <rect x="228" y="102" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="228" y="102" width="148" height="8" rx="4" fill="#0e6e55"/>
+  <text x="378" y="111" font-size="10" fill="#0e6e55">Bonne</text>
+  <rect x="448" y="102" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="448" y="102" width="188" height="8" rx="4" fill="#a05c00"/>
+  <text x="638" y="111" font-size="10" fill="#a05c00">Excellente</text>
+  <line x1="0" y1="120" x2="660" y2="120" stroke="#f0eeea" stroke-width="1"/>
+  <!-- Row 3: Vitesse -->
+  <text x="8" y="138" font-size="11" font-weight="600" fill="#8a837c">Vitesse generation</text>
+  <rect x="8" y="144" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="8" y="144" width="180" height="8" rx="4" fill="#0e6e55"/>
+  <text x="190" y="153" font-size="10" fill="#0e6e55">Rapide</text>
+  <rect x="228" y="144" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="228" y="144" width="174" height="8" rx="4" fill="#0e6e55"/>
+  <text x="404" y="153" font-size="10" fill="#0e6e55">Rapide</text>
+  <rect x="448" y="144" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="448" y="144" width="48" height="8" rx="4" fill="#c4531a"/>
+  <text x="498" y="153" font-size="10" fill="#c4531a">Lent (multi-etapes)</text>
+  <line x1="0" y1="162" x2="660" y2="162" stroke="#f0eeea" stroke-width="1"/>
+  <!-- Row 4: Stabilite -->
+  <text x="8" y="180" font-size="11" font-weight="600" fill="#8a837c">Stabilite entrainement</text>
+  <rect x="8" y="186" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="8" y="186" width="60" height="8" rx="4" fill="#c4531a"/>
+  <text x="70" y="195" font-size="10" fill="#c4531a">Instable, difficile a regler</text>
+  <rect x="228" y="186" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="228" y="186" width="180" height="8" rx="4" fill="#0e6e55"/>
+  <text x="410" y="195" font-size="10" fill="#0e6e55">Stable</text>
+  <rect x="448" y="186" width="194" height="8" rx="4" fill="#e8e3db"/>
+  <rect x="448" y="186" width="186" height="8" rx="4" fill="#0e6e55"/>
+  <text x="636" y="195" font-size="10" fill="#0e6e55">Tres stable</text>
+</svg>
