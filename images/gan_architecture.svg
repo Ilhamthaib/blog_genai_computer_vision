@@ -1,45 +1,55 @@
-<svg viewBox="0 0 660 190" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="12" style="background:#f5f3ef;border-radius:6px;padding:20px">
-  <defs>
-    <marker id="g1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#8a837c"/></marker>
-    <marker id="g2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#4e3fbf"/></marker>
-    <marker id="g3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#0e6e55"/></marker>
-  </defs>
-  <text x="330" y="185" text-anchor="middle" font-size="11" font-weight="600" letter-spacing="2" fill="#8a837c">ARCHITECTURE GAN</text>
-  <!-- Bruit aleatoire -->
-  <rect x="4" y="55" width="100" height="80" rx="5" fill="#e8e3db" stroke="#d0c9be" stroke-width="1"/>
-  <text x="54" y="86" text-anchor="middle" font-weight="600" fill="#4a4540">Bruit</text>
-  <text x="54" y="102" text-anchor="middle" fill="#8a837c">aleatoire</text>
-  <text x="54" y="118" text-anchor="middle" font-size="11" fill="#8a837c">z ~ N(0,1)</text>
-  <line x1="106" y1="95" x2="138" y2="95" stroke="#8a837c" stroke-width="1.5" marker-end="url(#g1)"/>
-  <!-- Generateur -->
-  <rect x="140" y="40" width="120" height="110" rx="5" fill="#eeedfd" stroke="#4e3fbf" stroke-width="1.5"/>
-  <text x="200" y="85" text-anchor="middle" font-weight="600" fill="#4e3fbf">Generateur</text>
-  <text x="200" y="102" text-anchor="middle" fill="#4e3fbf" opacity=".7">G(z)</text>
-  <text x="200" y="118" text-anchor="middle" font-size="11" fill="#4e3fbf" opacity=".6">Cree de</text>
-  <text x="200" y="131" text-anchor="middle" font-size="11" fill="#4e3fbf" opacity=".6">fausses images</text>
-  <line x1="262" y1="95" x2="294" y2="95" stroke="#8a837c" stroke-width="1.5" marker-end="url(#g1)"/>
-  <!-- Image generee -->
-  <rect x="296" y="55" width="88" height="80" rx="5" fill="#fdf0dc" stroke="#a05c00" stroke-width="1.2" stroke-dasharray="5,3"/>
-  <text x="340" y="86" text-anchor="middle" font-weight="600" fill="#a05c00">Image</text>
-  <text x="340" y="102" text-anchor="middle" fill="#a05c00" opacity=".8">generee</text>
-  <text x="340" y="116" text-anchor="middle" font-size="11" fill="#a05c00" opacity=".6">G(z)</text>
-  <!-- Images reelles -->
-  <rect x="296" y="148" width="88" height="34" rx="5" fill="#e1f3ed" stroke="#0e6e55" stroke-width="1"/>
-  <text x="340" y="169" text-anchor="middle" font-weight="600" fill="#0e6e55">Images reelles</text>
-  <!-- fleches vers discriminateur -->
-  <line x1="386" y1="92" x2="416" y2="108" stroke="#8a837c" stroke-width="1.5" marker-end="url(#g1)"/>
-  <line x1="386" y1="162" x2="416" y2="148" stroke="#8a837c" stroke-width="1.5" marker-end="url(#g1)"/>
-  <!-- Discriminateur -->
-  <rect x="418" y="55" width="120" height="100" rx="5" fill="#f9ede5" stroke="#c4531a" stroke-width="1.5"/>
-  <text x="478" y="95" text-anchor="middle" font-weight="600" fill="#c4531a">Discriminateur</text>
-  <text x="478" y="112" text-anchor="middle" fill="#c4531a" opacity=".7">D(x)</text>
-  <text x="478" y="128" text-anchor="middle" font-size="11" fill="#c4531a" opacity=".6">Vraie ou fausse ?</text>
-  <line x1="540" y1="105" x2="572" y2="105" stroke="#8a837c" stroke-width="1.5" marker-end="url(#g1)"/>
-  <!-- Verdict -->
-  <rect x="574" y="75" width="80" height="60" rx="5" fill="#f5f3ef" stroke="#8a837c" stroke-width="1"/>
-  <text x="614" y="101" text-anchor="middle" font-weight="600" fill="#141210">Verdict</text>
-  <text x="614" y="117" text-anchor="middle" fill="#4a4540">0 ou 1</text>
-  <!-- Gradient retour -->
-  <path d="M614 75 Q614 14 200 14 L200 40" stroke="#4e3fbf" stroke-width="1.2" fill="none" stroke-dasharray="4,3" marker-end="url(#g2)"/>
-  <text x="410" y="10" text-anchor="middle" font-size="10" fill="#4e3fbf">Gradient de retour — mise a jour du Generateur</text>
-</svg>
+<svg viewBox="0 0 660 190" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans,sans-serif" font-size="12">
+            <defs>
+              <marker id="g1" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#8a837c"/></marker>
+              <marker id="g2" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#4e3fbf"/></marker>
+              <marker id="g3" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#0e6e55"/></marker>
+            </defs>
+ 
+            <!-- Bruit aleatoire -->
+            <rect x="4" y="55" width="100" height="80" rx="5" fill="#e8e3db" stroke="#d0c9be" stroke-width="1"/>
+            <text x="54" y="86" text-anchor="middle" font-weight="600" fill="#4a4540">Bruit</text>
+            <text x="54" y="102" text-anchor="middle" fill="#8a837c">aleatoire</text>
+            <text x="54" y="118" text-anchor="middle" font-size="11" fill="#8a837c">z ~ N(0,1)</text>
+ 
+            <line x1="106" y1="95" x2="138" y2="95" stroke="#8a837c" stroke-width="1.5" marker-end="url(#g1)"/>
+ 
+            <!-- Generateur -->
+            <rect x="140" y="40" width="120" height="110" rx="5" fill="#eeedfd" stroke="#4e3fbf" stroke-width="1.5"/>
+            <text x="200" y="85" text-anchor="middle" font-weight="600" fill="#4e3fbf">Generateur</text>
+            <text x="200" y="102" text-anchor="middle" fill="#4e3fbf" opacity=".7">G(z)</text>
+            <text x="200" y="118" text-anchor="middle" font-size="11" fill="#4e3fbf" opacity=".6">Cree de</text>
+            <text x="200" y="131" text-anchor="middle" font-size="11" fill="#4e3fbf" opacity=".6">fausses images</text>
+ 
+            <line x1="262" y1="95" x2="294" y2="95" stroke="#8a837c" stroke-width="1.5" marker-end="url(#g1)"/>
+ 
+            <!-- Image generee -->
+            <rect x="296" y="55" width="88" height="80" rx="5" fill="#fdf0dc" stroke="#a05c00" stroke-width="1.2" stroke-dasharray="5,3"/>
+            <text x="340" y="86" text-anchor="middle" font-weight="600" fill="#a05c00">Image</text>
+            <text x="340" y="102" text-anchor="middle" fill="#a05c00" opacity=".8">generee</text>
+            <text x="340" y="116" text-anchor="middle" font-size="11" fill="#a05c00" opacity=".6">G(z)</text>
+ 
+            <!-- Images reelles -->
+            <rect x="296" y="148" width="88" height="34" rx="5" fill="#e1f3ed" stroke="#0e6e55" stroke-width="1"/>
+            <text x="340" y="169" text-anchor="middle" font-weight="600" fill="#0e6e55">Images reelles</text>
+ 
+            <!-- fleches vers discriminateur -->
+            <line x1="386" y1="92" x2="416" y2="108" stroke="#8a837c" stroke-width="1.5" marker-end="url(#g1)"/>
+            <line x1="386" y1="162" x2="416" y2="148" stroke="#8a837c" stroke-width="1.5" marker-end="url(#g1)"/>
+ 
+            <!-- Discriminateur -->
+            <rect x="418" y="55" width="120" height="100" rx="5" fill="#f9ede5" stroke="#c4531a" stroke-width="1.5"/>
+            <text x="478" y="95" text-anchor="middle" font-weight="600" fill="#c4531a">Discriminateur</text>
+            <text x="478" y="112" text-anchor="middle" fill="#c4531a" opacity=".7">D(x)</text>
+            <text x="478" y="128" text-anchor="middle" font-size="11" fill="#c4531a" opacity=".6">Vraie ou fausse ?</text>
+ 
+            <line x1="540" y1="105" x2="572" y2="105" stroke="#8a837c" stroke-width="1.5" marker-end="url(#g1)"/>
+ 
+            <!-- Verdict -->
+            <rect x="574" y="75" width="80" height="60" rx="5" fill="#f5f3ef" stroke="#8a837c" stroke-width="1"/>
+            <text x="614" y="101" text-anchor="middle" font-weight="600" fill="#141210">Verdict</text>
+            <text x="614" y="117" text-anchor="middle" fill="#4a4540">0 ou 1</text>
+ 
+            <!-- Gradient retour -->
+            <path d="M614 75 Q614 14 200 14 L200 40" stroke="#4e3fbf" stroke-width="1.2" fill="none" stroke-dasharray="4,3" marker-end="url(#g2)"/>
+            <text x="410" y="10" text-anchor="middle" font-size="10" fill="#4e3fbf">Gradient de retour — mise a jour du Generateur</text>
+          </svg>
