@@ -1,32 +1,45 @@
-<svg viewBox="0 0 660 100" xmlns="http://www.w3.org/2000/svg" font-family="sans-serif" font-size="11" style="background:#f5f3ef;border-radius:6px;padding:20px">
-  <defs>
-    <marker id="vi" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L0,6 L8,3 z" fill="#8a837c"/></marker>
-  </defs>
+<svg viewBox="0 0 660 100" xmlns="http://www.w3.org/2000/svg" font-family="DM Sans,sans-serif" font-size="11" style="background:#faf8f4;">
+  
   <!-- Point A -->
   <circle cx="50" cy="50" r="28" fill="#e1f3ed" stroke="#0e6e55" stroke-width="1.5"/>
   <text x="50" y="46" text-anchor="middle" font-weight="600" fill="#0e6e55">Image A</text>
   <text x="50" y="60" text-anchor="middle" fill="#0e6e55" opacity=".7">z_A</text>
-  <!-- intermediaire 1 -->
-  <line x1="80" y1="50" x2="138" y2="50" stroke="#d0c9be" stroke-width="1.2" marker-end="url(#vi)"/>
+
+  <!-- ligne 1 -->
+  <line x1="80" y1="50" x2="138" y2="50" stroke="#d0c9be" stroke-width="1.2"/>
+
+  <!-- intermédiaire 1 -->
   <circle cx="170" cy="50" r="20" fill="#f5f3ef" stroke="#d0c9be" stroke-width="1"/>
   <text x="170" y="46" text-anchor="middle" fill="#8a837c">0.25</text>
   <text x="170" y="60" text-anchor="middle" fill="#8a837c">A+B</text>
-  <!-- intermediaire 2 -->
-  <line x1="192" y1="50" x2="228" y2="50" stroke="#d0c9be" stroke-width="1.2" marker-end="url(#vi)"/>
+
+  <!-- ligne 2 -->
+  <line x1="192" y1="50" x2="228" y2="50" stroke="#d0c9be" stroke-width="1.2"/>
+
+  <!-- intermédiaire 2 -->
   <circle cx="260" cy="50" r="20" fill="#eeedfd" stroke="#4e3fbf" stroke-width="1.2"/>
   <text x="260" y="46" text-anchor="middle" fill="#4e3fbf">0.5</text>
   <text x="260" y="60" text-anchor="middle" fill="#4e3fbf" font-weight="600">milieu</text>
-  <!-- intermediaire 3 -->
-  <line x1="282" y1="50" x2="318" y2="50" stroke="#d0c9be" stroke-width="1.2" marker-end="url(#vi)"/>
+
+  <!-- ligne 3 -->
+  <line x1="282" y1="50" x2="318" y2="50" stroke="#d0c9be" stroke-width="1.2"/>
+
+  <!-- intermédiaire 3 -->
   <circle cx="350" cy="50" r="20" fill="#f5f3ef" stroke="#d0c9be" stroke-width="1"/>
   <text x="350" y="46" text-anchor="middle" fill="#8a837c">0.75</text>
   <text x="350" y="60" text-anchor="middle" fill="#8a837c">A+B</text>
+
+  <!-- ligne 4 -->
+  <line x1="372" y1="50" x2="428" y2="50" stroke="#d0c9be" stroke-width="1.2"/>
+
   <!-- Point B -->
-  <line x1="372" y1="50" x2="428" y2="50" stroke="#d0c9be" stroke-width="1.2" marker-end="url(#vi)"/>
   <circle cx="460" cy="50" r="28" fill="#e1f3ed" stroke="#0e6e55" stroke-width="1.5"/>
   <text x="460" y="46" text-anchor="middle" font-weight="600" fill="#0e6e55">Image B</text>
   <text x="460" y="60" text-anchor="middle" fill="#0e6e55" opacity=".7">z_B</text>
-  <text x="570" y="46" text-anchor="middle" font-size="12" fill="#4a4540">Transition</text>
-  <text x="570" y="60" text-anchor="middle" font-size="12" fill="#4a4540">progressive</text>
-  <text x="570" y="74" text-anchor="middle" font-size="11" fill="#8a837c">et continue</text>
+
+  <!-- Texte -->
+  <text x="550" y="50" text-anchor="middle" font-size="12" fill="#4a4540">Transition</text>
+  <text x="550" y="64" text-anchor="middle" font-size="12" fill="#4a4540">progressive</text>
+  <text x="550" y="78" text-anchor="middle" font-size="11" fill="#8a837c">et continue</text>
+
 </svg>
